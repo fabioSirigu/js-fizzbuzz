@@ -24,6 +24,9 @@ for (i=1; i<=100; i++) {
 Crea un container nel DOM , aggiungendo (attraverso la funzione append()) un elemento html con il numero o la stringa corretta da mostrare.
 */
 
+/* BONUS 2:
+Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz. */
+
 const container = document.getElementById ('container');
 console.log(container, 'sono il container');
 
@@ -54,10 +57,10 @@ for (i=1; i<=100; i++) {
             boxNumber.style.background = "rgb(238,174,202)";
             boxNumber.style.background = "radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)";
       }
+
 }
 
-/* BONUS 2:
-Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz. */
+
 
 
 
