@@ -26,22 +26,25 @@ Crea un container nel DOM , aggiungendo (attraverso la funzione append()) un ele
 const container = document.getElementById ('container');
 console.log(container, 'sono il container');
 
+let boxNumber = document.createElement ("box_number")
+container.append (boxNumber)
 
 for (i=1; i<=100; i++) {
       
       if ( i % 3 ===0) {
             let Fizz = 'Fizz';
-            container.append (Fizz);
+            boxNumber.append (Fizz);
       } else if ( i % 5 === 0 ) { 
             let Buzz = 'Buzz';
-            container.append (Buzz);
+            boxNumber.append (Buzz);
       } else if ( i % 3 ===0 && i % 5 === 0) { 
             let FizzBuzz = 'FizzBuzz';
-            container.append (FizzBuzz);
+            boxNumber.append (FizzBuzz);
       } else { 
-            container.append (i) 
+            boxNumber.append (i) 
       }
 }
+
 
 
 
