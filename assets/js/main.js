@@ -9,12 +9,12 @@ for (i=1; i<=100; i++) {
       // se sono multipli di 5 stampiamo Buzz
       // se sono multipli sia di 3 che di 5 stampiamo FizzBuzz
       
-      if ( i % 3 ===0) { 
-            console.log('Fizz');
+      if ( i % 3 ===0  && i % 5 === 0) { 
+            console.log('FizzBuzz');
       } else if ( i % 5 === 0 ) { 
             console.log('Buzz');
-      } else if ( i % 3 ===0 && i % 5 === 0) { 
-            console.log('FizzBuzz');
+      } else if ( i % 3 ===0) { 
+            console.log('Fizz');
       } else { 
             console.log(i); 
       }
@@ -23,28 +23,31 @@ for (i=1; i<=100; i++) {
 /* BONUS 1:
 Crea un container nel DOM , aggiungendo (attraverso la funzione append()) un elemento html con il numero o la stringa corretta da mostrare.
 */
+
 const container = document.getElementById ('container');
 console.log(container, 'sono il container');
 
+const ulElement = document.querySelector ('ul')
 
-let boxNumber = document.createElement ('col')
-container.append (boxNumber)
 
 for (i=1; i<=100; i++) {
       
-      if ( i % 3 ===0) {
-            let Fizz = 'Fizz';
-            boxNumber.append (Fizz);
+      let boxNumber = document.createElement ('li')
+      ulElement.append (boxNumber)
+      
+      if ( i % 3 ===0 && i % 5 === 0) {
+            boxNumber.append ('FizzBuzz');
       } else if ( i % 5 === 0 ) { 
-            let Buzz = 'Buzz';
-            boxNumber.append (Buzz);
-      } else if ( i % 3 ===0 && i % 5 === 0) { 
-            let FizzBuzz = 'FizzBuzz';
-            boxNumber.append (FizzBuzz);
+            boxNumber.append ('Buzz');
+      } else if ( i % 3 ===0 ) {
+            boxNumber.append ('Fizz');
       } else { 
             boxNumber.append (i) 
       }
 }
+
+/* BONUS 2:
+Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz. */
 
 
 
