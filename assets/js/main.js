@@ -26,7 +26,8 @@ Crea un container nel DOM , aggiungendo (attraverso la funzione append()) un ele
 const container = document.getElementById ('container');
 console.log(container, 'sono il container');
 
-let boxNumber = document.createElement ("box_number")
+
+let boxNumber = document.createElement ('col')
 container.append (boxNumber)
 
 for (i=1; i<=100; i++) {
