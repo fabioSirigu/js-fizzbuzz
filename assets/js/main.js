@@ -4,7 +4,7 @@ ma che per i multipli di 3 stampi “Fizz” al posto del numero
 e per i multipli di 5 stampi “Buzz”.
 Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”. */
 
-for (i=1; i<=100; i++) {
+for (let i=1; i<=100; i++) {
       // se sono multipli di 3 stampiamo Fizz
       // se sono multipli di 5 stampiamo Buzz
       // se sono multipli sia di 3 che di 5 stampiamo FizzBuzz
@@ -33,7 +33,7 @@ console.log(container, 'sono il container');
 const ulElement = document.querySelector ('ul')
 
 
-for (i=1; i<=100; i++) {
+for (let i=1; i<=100; i++) {
       
       let boxNumber = document.createElement ('li')
       ulElement.append (boxNumber)

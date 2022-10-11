@@ -11,8 +11,8 @@ body {
       gap: 0.5rem;
 }
 li {
-      width: 100px;
-      height: 100px;
+      width: calc((100% / 10) - 0.5rem);
+      aspect-ratio: 1 / 1;
       padding: 1rem;
       list-style: none;
       border-radius: 0.5rem;
